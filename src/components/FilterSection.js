@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
-
+/**
+ * Componente de filtro de logs
+ * @module components/FilterSection
+ * @author Gabriel Logan
+ * @requires React
+ * @prop {function} onFilter - Fun o chamada quando o usu rio aplica o filtro
+ * @prop {string} ipFilter - O IP do usu rio a ser filtrado
+ * @prop {boolean} isValidIPFormat - Verifica se o IP est  no formato correto
+ * @returns {ReactElement} - Componente FilterSection
+ */
 function FilterSection({ onFilter }) {
   const [ipFilter, setIpFilter] = useState('');
 
